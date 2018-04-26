@@ -9,48 +9,17 @@
 <body>
 	<script>
 	document.writeln("<h1>Employees:</h1>");
-	document.writeln("<table border = '10'><tr>");
+	document.writeln("<table border = '1'><tr>");
 	document.write("<tr>" + "<th>" + "ID" + "</th>" + "<th>" + "First Name" + "</th>" + "<th>" + "Last Name" + "</th>" + "<th>" + "Email" + "</th>" + "<th>" + "Job Title" + "</th>" + "<th>" + "Salary" + "</th>") ;
 
 	for (i = 0; i < json.length; i++) {
     var obj = json[i];
    
    	document.write("<tr>");
-	document.write("<td>" + json[i].id + "</td>" + "<td>" + json[i].firstName + "<td>" + json[i].lastName + "</td>" + "<td>" + json[i].eMail + "</td>" + "<td>" + json[i].jobTitle + "</td>" + "<td>" + json[i].salary + "</td>");
+	document.write("<td>" + json[i].id + "</td>" + "<td>" + json[i].firstName + "<td>" + json[i].lastName + "</td>" + "<td>" + json[i].eMail + "</td>" + "<td>" + json[i].jobTitle + "</td>" + "<td>" + json[i].salary + "€" + "</td>");
 	document.write("</tr>");
 	}	
 	document.write("</table>");
-
-
-
-   /*
-    document.writeln("<td>");
-    document.writeln("<table border = '1'>");
-    document.writeln("<tr><td><b>ID: </b></td>" + "<td>" + json[i].id+"</td></tr>");
-    document.write("<br>");
-	document.writeln("<tr><td><b>first name:</b></td>" + "<td>" + json[i].firstName+"</td></tr>");
-    document.writeln("<tr><td><b>last name:</b></td>" + "<td>" + json[i].lastName+"</td></tr>");
-    document.writeln("<tr><td><b>e-mail:</b></td>" + "<td>" + json[i].eMail+"</td></tr>");
-    document.writeln("<tr><td><b>job title:</b></td>" + "<td>" + json[i].jobTitle+"</td></tr>");
-    document.writeln("<tr><td><b>salary:</b></td>" + "<td>" + json[i].salary+ "€" + "</td></tr>");
-    document.writeln("</table");
-    document.writeln("</td>");
-}
-	
-	or (l = 0; l < json.length; l++) {
-		var obj =json[l];
-
-	document.writeln("<td>");
-	document.writeln("<table border = '1'>");
-	document.writeln("<tr><td><n>ID: </b></td>");
-	document.writeln("<tr><td><n>first name: </b></td>");
-	document.writeln("<tr><td><n>last name: </b></td>");
-	document.writeln("<tr><td><n>e-mail: </b></td>");
-	document.writeln("<tr><td><n>job title: </b></td>");
-	document.writeln("<tr><td><n>salary: </b></td>");
-	}	
-*/
-
 </script>
 </body>
 </html>
